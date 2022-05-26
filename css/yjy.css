@@ -1,0 +1,879 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: black; */
+  /* background: linear-gradient(-60deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 6000% 6000%;
+      animation: gradientBG 50s ease infinite; */
+}
+
+header {
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  /* backdrop-filter: blur(7px); */
+  background-color: rgba(174, 45, 164, 0);
+  /* border-right: 1px rgba(40, 40, 40, 0.35) solid; */
+  position: fixed;
+  z-index: 99;
+}
+.container {
+  width: 100%;
+  height: 48px;
+  margin: auto;
+}
+
+.logo {
+  margin-left: 0%;
+  float: left;
+  width: 90px;
+  height: 48px;
+}
+
+.logo img {
+  height: 28px;
+  margin-left: 15%;
+  margin-top: 12%;
+}
+
+.container ul {
+  float: left;
+  margin-left: 100px;
+  margin-top: 18px;
+}
+
+.container ul li {
+  float: left;
+  width: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.container ul li a {
+  margin: auto;
+
+  float: left;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 800;
+}
+.last {
+  position: relative;
+  /* top: 100px; */
+  left: 50px;
+}
+.icon {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 48px;
+  justify-content: space-between;
+}
+.icon a {
+  display: inline-block;
+  position: relative;
+  width: 22px;
+  top: 25%;
+}
+.icon img {
+  height: 14px;
+  /* text-align: justify; */
+}
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  /* padding: 16px; */
+  /* font-size: 16px; */
+  border: none;
+  /* 光标样式 手指 */
+  cursor: pointer;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 48px;
+  width: 1000px;
+  height: 1000px;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.show {
+  display: block;
+}
+
+/* 视频 */
+
+.video1 {
+  position: relative;
+  top: 48px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+section {
+  position: relative;
+  left: 1%;
+  width: 98%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.wengzi {
+  position: relative;
+  display: inline-block;
+  /* display: flex; */
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  /* left: 30px; */
+  /* top: 20px; */
+  width: 342px;
+  height: 152px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+}
+.wengzi h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+  top: 10%;
+  left: 22%;
+  width: 209px;
+  height: 34px;
+}
+.wengzi p {
+  position: relative;
+  font-weight: bold;
+  top: 40px;
+  font-size: 12px;
+  height: 30px;
+  left: 25%;
+}
+.goumai {
+  position: relative;
+  top: 40px;
+  font-size: 12px;
+  height: 30px;
+  left: 25%;
+}
+.hei {
+  position: relative;
+  left: 40%;
+  top: 30%;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei > a {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(255, 255, 255);
+}
+.hei::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(255, 254, 255);
+}
+.hei:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei:hover > a {
+  z-index: 99;
+  color: rgb(0, 0, 0);
+  /* z-index: 1; */
+}
+
+/* 系列 */
+
+.xilie {
+  position: relative;
+  top: 55px;
+  left: 1%;
+  display: flex;
+  width: 1320px;
+  height: 800px;
+}
+.xilie1 {
+  position: relative;
+  height: 748.43px;
+}
+.xilie1 img {
+  position: relative;
+  width: 651.28px;
+
+  /* height: 748.43px; */
+}
+.xilie2 {
+  position: relative;
+  height: 748.43px;
+  left: 1%;
+}
+.xilie2 img {
+  position: relative;
+  width: 651.28px;
+  float: right;
+  /* height: 748.43px; */
+}
+.xilie1 h1 {
+  /* position: relative; */
+  display: inline-block;
+  position: absolute;
+  /* margin: auto; */
+  /* align-items: center;
+        justify-content: center; */
+  /* left: 30px; */
+  top: 30px;
+  left: 20px;
+  /* top: 20px; */
+  width: 150px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.xilie2 h1 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 150px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.hei1 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  top: 30px;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei1 > a {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei1::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei1:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei1:hover > a {
+  z-index: 99;
+  color: rgb(255, 255, 255);
+  /* z-index: 1; */
+}
+.hei2 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  top: 30px;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei2 > a {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei2::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei2:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei2:hover > a {
+  z-index: 99;
+  color: rgb(255, 255, 255);
+  /* z-index: 1; */
+}
+.cap {
+  position: relative;
+  top: 175px;
+  display: flex;
+  width: 1320;
+  height: 600px;
+}
+.cap1 {
+  position: relative;
+  width: 340px;
+  height: 600px;
+}
+.cap1 h1 {
+  position: relative;
+  font-size: 32px;
+  top: 32%;
+  left: 10%;
+}
+.cap1 p {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  top: 35%;
+  left: 10%;
+}
+.hei3 {
+  position: absolute;
+  display: inline-block;
+  left: 10%;
+  top: 50%;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei3 > a {
+  display: inline-block;
+  /* top: 10px; */
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei3:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei3:hover > a {
+  z-index: 9;
+  color: rgb(255, 255, 255);
+  /* z-index: 1; */
+}
+.hei4 {
+  position: absolute;
+  display: inline-block;
+  left: 35%;
+  top: 50%;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei4 > a {
+  display: inline-block;
+  /* top: 10px; */
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei4::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei4:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei4:hover > a {
+  z-index: 9;
+  color: rgb(255, 255, 255);
+  /* z-index: 1; */
+}
+
+.shipin {
+  position: relative;
+  width: 988.17px;
+  height: 555.833px;
+  overflow: hidden;
+}
+.shipin video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* 箱包 */
+
+.bag {
+  position: relative;
+  top: 140px;
+  left: 1%;
+  display: flex;
+  width: 1320px;
+  height: 800px;
+}
+.bag1 {
+  position: relative;
+  height: 748.43px;
+}
+.bag1 img {
+  position: relative;
+  width: 651.28px;
+}
+.bag2 {
+  position: relative;
+  height: 748.43px;
+  left: 1%;
+}
+.bag2 img {
+  position: relative;
+  width: 651.28px;
+  float: right;
+}
+.bag1 h1 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 150px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.bag2 h1 {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 150px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+.hei5 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  top: 30px;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei5 > a {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei5::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei5:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei5:hover > a {
+  z-index: 99;
+  color: rgb(255, 255, 255);
+}
+.hei6 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  top: 30px;
+  width: 60px;
+  height: 39px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.hei6 > a {
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  height: 40;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+}
+.hei6::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 39px;
+  width: 64px;
+  height: 39px;
+  background-color: rgb(0, 0, 0);
+}
+.hei6:hover::after {
+  top: 0;
+  transition: 0.3s;
+}
+.hei6:hover > a {
+  z-index: 99;
+  color: rgb(255, 255, 255);
+}
+
+/* 探索 */
+
+.explore {
+  position: relative;
+  background-color: rgb(22, 22, 22);
+  top: 108px;
+  left: 1%;
+  display: flex;
+  width: 1318px;
+  height: 535px;
+}
+.side {
+  position: relative;
+  width: 324px;
+}
+.side h1 {
+  position: relative;
+  top: 42%;
+  right: 125px;
+  font-size: 24;
+  font-weight: 700;
+  color: white;
+  transform:rotate(-90deg);
+}
+.side1 {
+  position: relative;
+  top: 40px;
+  width: 697px;
+}
+.graph {
+  width: 100%;
+  background: red;
+  margin: auto;
+  position: relative;
+}
+.graph img {
+  width: 100%;
+  position: absolute;
+  /*z-index: 10;*/
+}
+input {
+  position: relative;
+  top: 400px;
+  left: 90%;
+
+  width: 50px;
+  height: 30px;
+  background: rgba(0, 123, 255, 0);
+  border-radius: 5px;
+  font-size: 20px;
+}
+.side1 h1 {
+    position: relative;
+    top: 320px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+.hei7 {
+    position: absolute;
+    display: inline-block;
+    /* left: 20px; */
+    top: 410px;
+    width: 34px;
+    height: 39px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .hei7 > a {
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    height: 40px;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+  }
+  .hei7::after {
+    content: "";
+    display: block;
+  
+    position: absolute;
+    top: 39px;
+    width: 64px;
+    height: 39px;
+    background-color: rgb(255, 255, 255);
+  }
+  .hei7:hover::after {
+    top: 0;
+    transition: 0.3s;
+  }
+  .hei7:hover > a {
+    z-index: 99;
+    color: rgb(0, 0, 0);
+  }
+
+
+  /* footer */
+
+
+  footer{
+      position: relative;
+      /* display: flex; */
+      left: 1%;
+      top: 120px;
+      width: 1318px;
+      height: 244.21px;
+      border-top: 1px rgb(219, 219, 219) solid;
+  }
+  .footer1 {
+    position: relative;
+    display: flex;
+    /* left: 1%; */
+    /* top: 120px; */
+    width: 1318px;
+    height: 234.21px;
+    border-top: 1px rgb(219, 219, 219) solid;
+
+  }
+  .help {
+      position: relative;
+      top: 34px;
+      left: 8px;
+      width: 400px;
+      
+  }
+  .help h6 {
+      color: rgb(0, 0, 0);
+  }
+  .help img {
+      position: relative;
+      width: 14px;
+  }
+  .help p {
+      position: relative;
+      top: 20px;
+      /* left: 4px; */
+      font-size: 12px;
+      font-weight: 400;
+      height: 25px;
+  }
+  .gongshi {
+    position: relative;
+    top: 34px;
+    left: 8px;
+    width: 400px;
+    
+}
+.gongshi h6 {
+    color: rgb(0, 0, 0);
+}
+.gongshi p {
+    position: relative;
+    top: 20px;
+    /* left: 4px; */
+    font-size: 12px;
+    font-weight: 400;
+    height: 25px;
+}
+.falitiaokuan {
+    position: relative;
+    top: 34px;
+    left: 8px;
+    width: 500px;
+    
+}
+.falitiaokuan h6 {
+    color: rgb(0, 0, 0);
+}
+.falitiaokuan p {
+    position: relative;
+    top: 20px;
+    /* left: 4px; */
+    font-size: 12px;
+    font-weight: 400;
+    height: 25px;
+}
+.dingyue{
+    position: relative;
+    top: 34px;
+    left: 8px;
+    width: 310px;
+
+}
+.dingyue1{
+    position: relative;
+    top: 20px;
+    border-bottom:1px solid #000000;
+    left: 0;
+    width: 230px;
+
+}
+.dingyue1 input {
+    position: relative;
+    border-style: none;
+    font-size: 12px;
+    forced-color-adjust: none;
+    left: 0;
+    top: 0;
+}
+.dingyue1 input:focus{
+    border-style: none;
+    outline: none;
+}
+.tubiao {
+    position: relative;
+    top: 50px;
+    left: 166px;
+    width: 92px;
+    height: 20px;
+
+}
+.tubiao a {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+}
+.tubiao a img {
+    width: 18px;
+}
+.beianhao {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    display: flex;
+}
+.beianhao1 {
+    position: relative;
+    width: 1144px;
+    display: flex;
+}
+.beianhao1 p {
+    position: relative;
+    font-size: 12px;
+}
+.beianhao1 a {
+    text-decoration: none;
+    color: #000;
+}
+.beianhao1 img {
+    position: relative;
+    width: 12px;
+}
+.yuyan {
+    position: relative;
+    width: 180px;
+    /* top: 144px; */
+    /* left: 80px; */
+    
+}
+.yuyan a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+
+}
