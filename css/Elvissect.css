@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(7px); */
+    background-color: rgb(255, 255, 255);
+    /* border-right: 1px rgba(40, 40, 40, 0.35) solid; */
+    position: fixed;
+    z-index: 9;
+  }
+  .container {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 48px;
+    margin: auto;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    float: left;
+    width: 90px;
+    height: 48px;
+  }
+  
+  .logo img {
+    height: 28px;
+    margin-left: 15%;
+    margin-top: 12%;
+  }
+  
+  .container ul {
+    float: left;
+    margin-left: 100px;
+    margin-top: 18px;
+  }
+  
+  .container ul li {
+    float: left;
+    width: 50px;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .container ul li a {
+    margin: auto;
+  
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .last {
+    position: relative;
+    /* top: 100px; */
+    left: 50px;
+  }
+  .icon {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 48px;
+    justify-content: space-between;
+  }
+  .icon a {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    top: 25%;
+  }
+  .icon img {
+    height: 14px;
+    /* text-align: justify; */
+  }
+  .headershoushuo1 {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .headershoushuo2 {
+    
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #000000;
+    left: 20px;
+    width: 230px;
+  
+  }
+  .headershoushuo2 input {
+    position: relative;
+    border-style: none;
+    font-size: 12px;
+    forced-color-adjust: none;
+    left: 0;
+    top: 0;
+  }
+  .headershoushuo2 input:focus {
+    border-style: none;
+    outline: none;
+  }
+  .dropbtn {
+    color: white;
+    border: none;
+    /* 光标样式 手指 */
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    top: 48px;
+    width: 600px;
+    height: 600px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+  }
+  .dropdown1 {
+    position: relative;
+    width: 60px;
+  }
+  .dropdown2 {
+    position: relative;
+    width: 400px;
+    left: 300px;
+    height: 600px;
+    background-color: #b9b9b9a2;
+    opacity: 0;
+  }
+  
+  .dropdown3 {
+    /* float: left; */
+    position: relative;
+    /* left: -150px; */
+    top: -110px;
+  }
+  .dropdown3 a {
+    display: inline-block;
+    width: 200px;
+    /* height: 10px; */
+  }
+  
+  .dropdown-content div:hover .dropdown2 {
+    opacity: 1;
+  }
+  .dropdown-content ul {
+    position: relative;
+    left: -100px;
+    height: 6px;
+  }
+  .dropdown-content ul li {
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  .dropdown-content div ::after {
+    position: relative;
+    left: 0px;
+    content: " ＞";
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .dropdown-content ul :hover {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  
+  .dropdown-content div :hover ::after {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+  .dropdown a:hover {
+    /* background-color: #f1f1f1; */
+    color: #4e4e4e;
+  }
+  .show {
+    display: block;
+  }
+
+
+.floatr{
+    float: right;
+}
+.floatl{
+    float: left;
+}
+section{
+  position: relative;
+  top: 48px;
+    width:100%;
+    background-color: black;
+}
+.contbox1{/* 第一个box */
+    width: 1419px;
+    height: 60px;
+    padding: 0 3%;
+    position: relative;
+    /* background-color: blueviolet; */
+}
+.box1-s{
+    width: 500px;
+    height: 60px;
+    float: left;
+}
+.box1-s ul{/* box1中 的ul标签 */
+    float: left;
+    list-style: none;
+}
+.box1-s ul li{/* 文字大小间距 */
+    float: left;
+    margin-right: 10px;
+    height: 15px;
+    padding-top: 40px;
+    font-size: 13px;
+    color: #797979;
+}
+.contbox1 span{/* 右边标签 */
+    float: right;
+    height: 60px;
+    width: 300px;
+    text-align: right;/* 水平向右 */
+}
+.contbox1 span p{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.contbox2{
+    display: inline-block;
+    height: 620px;
+    width: 1419px;
+    padding: 0 3%;
+    position: relative;
+}
+.contbox2 img{
+    width: 100%;
+    height: 620px;
+}
+.contbox2 .box2-1{
+    width: 340px;
+    height: 64px;
+    padding-top: 269px 544px;
+    position: absolute;
+    top: 270px;
+    left: 590px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.contbox3{
+    width: 665px;
+    height: 200px;
+    margin: 5px 3%;
+    /* background-color: aquamarine; */
+    padding: 70px 377px;
+    text-align: center;
+    
+}
+.contbox3 span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.contbox3 p{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+.contbox4{
+    width: 1419px;
+    height: 844px;
+    margin: 10px 3%;
+}
+.contbox4 .box4-1{
+    width: 705px;
+    height: 844px;
+    float: left;
+}
+.contbox4 .box4-2{
+    width: 705px;
+    height: 844px;
+    float: right;
+}
+.contbox4 img{
+    width: 100%;
+    height: 100%;
+}
+.contbox5{
+    height: 855px;
+    width: 1419px;
+    margin: 10px 3%;
+}
+.contbox5 .box5-1{
+    width: 710px;
+    height: 855px;
+    float: left;
+}
+.contbox5 .box5-2{
+    float: right;
+    width: 579px;
+    height: 695px;
+    padding: 80px 65px;
+}
+.contbox5 .box5-1 img{
+    width: 100%;
+    height: 100%;
+}
+.contbox5 .box5-2 h3{
+    font-size: 21px;
+    font-weight:500 ;
+    color: white;
+    text-align: left;
+}
+.contbox6{
+    width: 1419px;
+    height: 697px;
+    margin: 10px 3%;
+}
+.contbox6 video{
+    width: 100%;
+    height: 100%;   
+}
+.contbox7{
+    width: 1319px;
+    height: 154px;
+    margin: 23px 3%;
+    padding-left: 100px;
+}
+.contbox7 h2{
+    float: left;
+    text-align: left;
+    font-weight: 700;
+    font-size: 2em;
+    margin-right:500px;
+    color: #fff;
+}
+.contbox7 .box7-1{
+    float: right;
+    text-align: left;
+    width: 600px;
+    height: 154px;
+    font-size: 17px;
+    margin-right: 100px;
+    color: #fff;
+}
+.contbox8{
+    width: 1419px;
+    height: 575px;
+    margin: 10px 3%;
+}
+.contbox8 ul{
+    list-style: none;
+    float: left;
+}
+.contbox8 ul li{
+    width: 350px;
+    height: 575px;
+    float: left;
+    margin-left: 4px;
+}
+/* .contbox8 ul li:nth-child(4n){
+    margin-left: 3px;
+} */
+.contbox8 ul li img{
+    width: 100%;
+    height: 100%;
+}
+.contbox9{
+    width: 1379px;
+    height: 64px;
+    margin: 0 3% ;
+    padding: 10px 20px;
+    background-color: black;
+}
+.box9-1{
+    background-color: #fff;
+    width: 649px;
+    height: 24px;
+    padding: 20px;
+}
+.box9-2{
+    background-color: #fff;
+    width: 650px;
+    height: 24px;
+    padding: 20px;
+}
+.contbox9  ul{
+    list-style: none;
+    
+}
+.contbox9  ul li{
+    
+    height: 24px;
+    margin: 0 10px;
+}
+.contbox9  ul li img{
+    height: 100%;
+}
+
+

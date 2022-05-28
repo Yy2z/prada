@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 75.5%; 
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(7px); */
+    background-color: rgb(255, 255, 255);
+    /* border-right: 1px rgba(40, 40, 40, 0.35) solid; */
+    position: fixed;
+    z-index: 9;
+  }
+  .container {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 48px;
+    margin: auto;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    float: left;
+    width: 90px;
+    height: 48px;
+  }
+  
+  .logo img {
+    height: 28px;
+    margin-left: 15%;
+    margin-top: 12%;
+  }
+  
+  .container ul {
+    float: left;
+    margin-left: 100px;
+    margin-top: 18px;
+  }
+  
+  .container ul li {
+    float: left;
+    width: 50px;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .container ul li a {
+    margin: auto;
+  
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .last {
+    position: relative;
+    /* top: 100px; */
+    left: 50px;
+  }
+  .icon1 {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 48px;
+    justify-content: space-between;
+  }
+  .icon1 a {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    top: 25%;
+  }
+  .icon1 img {
+    height: 14px;
+    /* text-align: justify; */
+  }
+  .headershoushuo1 {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .headershoushuo2 {
+    
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #000000;
+    left: 20px;
+    width: 230px;
+  
+  }
+  .headershoushuo2 input {
+    position: relative;
+    border-style: none;
+    font-size: 12px;
+    forced-color-adjust: none;
+    left: 0;
+    top: 0;
+  }
+  .headershoushuo2 input:focus {
+    border-style: none;
+    outline: none;
+  }
+  .dropbtn {
+    color: white;
+    border: none;
+    /* 光标样式 手指 */
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    top: 48px;
+    width: 600px;
+    height: 600px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+  }
+  .dropdown1 {
+    position: relative;
+    width: 60px;
+  }
+  .dropdown2 {
+    position: relative;
+    width: 400px;
+    left: 300px;
+    height: 600px;
+    background-color: #b9b9b9a2;
+    opacity: 0;
+  }
+  
+  .dropdown3 {
+    /* float: left; */
+    position: relative;
+    /* left: -150px; */
+    top: -110px;
+  }
+  .dropdown3 a {
+    display: inline-block;
+    width: 200px;
+    /* height: 10px; */
+  }
+  
+  .dropdown-content div:hover .dropdown2 {
+    opacity: 1;
+  }
+  .dropdown-content ul {
+    position: relative;
+    left: -100px;
+    height: 6px;
+  }
+  .dropdown-content ul li {
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  .dropdown-content div ::after {
+    position: relative;
+    left: 0px;
+    content: " ＞";
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .dropdown-content ul :hover {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  
+  .dropdown-content div :hover ::after {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+  .dropdown a:hover {
+    /* background-color: #f1f1f1; */
+    color: #4e4e4e;
+  }
+  .show {
+    display: block;
+  }
+/* 主体 */
+section{
+    position: relative;
+    top: 10px;
+    float: left;
+    /* margin: 0 ; */
+    width: 168rem;
+    height: 336rem;
+    /* display: flex; */
+    /* outline: 1px solid hotpink; */
+}
+/* 标题 */
+section>h1{
+    font-size: 3.5rem;
+    margin: 4rem 0 1.8rem 2rem;
+}
+section>h3{
+    font-size: 1.25rem;
+    margin:0 0 3rem 2rem;
+}
+/* 第一行图片 */
+.tu1{
+    position: relative;
+    width: 162rem;
+    height: 95.5rem;
+    padding: 0 2rem;
+    /* display: flex; */
+}
+.tu1-1,.tu1-2{
+    position: absolute;
+    width: 81rem;
+    height: 93.5rem;
+    /* padding: 10px; */
+    font-weight: bold;
+    /* display: flex; */
+}
+.tu1 nav a{
+    display: block;
+    width: 81rem;
+    height: 83.3rem;
+}
+.tu1-1{
+    background-image: url(../images/LYT1.webp);
+    background-size: 100%;
+}
+.tu1-2{
+    right: 0;
+    background-image: url(../images/LYT2.webp);
+    background-size: 100%;
+}
+/* 第一行的标题和链接 */
+.tu1-1 div,.tu1-2 div{
+    display: inline-block;
+    color:black ;
+}
+.tu1-1>div,.tu1-2>div{
+    width: 77rem;
+    height: 4.2rem;
+    padding: 3rem 2rem ;
+    font-size: 3.2rem;
+}
+.hei{
+    position: relative;
+    left: 43.8rem;
+    top: 0;
+    width: 6.4rem;
+    height: 3.9rem;
+    /* background-color: aquamarine; */
+    border-bottom: 0.1rem solid black;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.hei>a{
+    display: inline-block;
+    position: absolute;
+    height: 4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    line-height: 4rem;
+}
+.hei::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3.9rem;
+    width: 6.4rem;
+    height: 3.9rem;
+    background-color: black;
+}
+.hei:hover::after{
+    top: 0;
+    transition: 0.3s;
+}
+.hei:hover>a{
+    color: aliceblue;
+    z-index: 1;
+}
+/* 第二排图片矢量图和超链接 */
+.icon {
+    width: 1.75em;
+    height: 1.75em;
+    /* vertical-align: -0.15em; */
+    fill: currentColor;
+    overflow: hidden;
+    display: block;
+    padding: 0.8rem;
+    color: black;
+    /* opacity: 0; */
+    z-index: -1;
+  }
+.erpai a{
+    /* display: inline-block; */
+    width: 4.4rem;
+    height: 4.4rem;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: all .3s;
+}
+.a1{
+    right:0;
+    top: 1rem; 
+}
+.a2{
+    right: 0;
+    top: 5.4rem;
+}
+/* 第二排图片总大小和各个小盒子 */
+main{
+    width: 160rem;
+    height: 61rem;
+    padding: 2rem 4rem;
+}
+main>div{
+    float: left;
+    width: 38rem;
+    height: 61rem;
+    padding: 1rem;
+    /* outline: 1px solid black; */
+}
+.erpai{
+    position: relative;
+    width: 38rem;
+    height: 47.5rem;
+ 
+}
+/* 二排第一张图 */
+.tu2-1-1{
+    background-image: url(../images/LYT3.webp);
+    background-size: 100%;
+}
+/* .tu2-1>a{
+    display: inline-block;
+    width: 380px;
+    height: 610px;
+    z-index: -1; 
+    opacity: -1;
+} */
+.tu2-1-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT4.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu2-1-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.erpai:hover a{
+    opacity: 1;
+    /* z-index: 3; */
+    /* visibility: visible; */
+}
+/* 第二排图片下面的名称价格 */
+.jiage{
+    width: 34rem;
+    height: 9.5rem;
+    padding: 2rem;
+    /* outline: 1px solid hotpink; */
+}
+.jiage a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 4rem;
+}
+.jiage div{
+    width: 34rem;
+    height: 2.1rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+/* 二排第二张图 */
+.tu2-2-1{
+    background-image: url(../images/LYT6.webp);
+    background-size: 100%;
+}
+.tu2-2-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT5.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu2-2-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.erpai:hover a{
+    opacity: 1;
+}
+/* 二排第三张图 */
+.tu2-3-1{
+    background-image: url(../images/LYT7.webp);
+    background-size: 100%;
+}
+.tu2-3-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT8.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu2-3-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.erpai:hover a{
+    opacity: 1;
+}
+/* 二排第四张图 */
+.tu2-4-1{
+    background-image: url(../images/LYT9.webp);
+    background-size: 100%;
+    
+}
+.tu2-4-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT10.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu2-4-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.erpai:hover a{
+    opacity: 1;
+}
+/* 第三排 */
+.tu3{
+    position: relative;
+    width: 162rem;
+    height: 95.5rem;
+    padding: 0 2rem;
+
+}
+.tu3>div{
+    position: absolute;
+    width: 81rem;
+    height: 93.5rem;
+    /* padding: 10px; */
+    font-weight: bold;
+}
+.tu3 nav a{
+    display: block;
+    width: 81rem;
+    height: 83.3rem;
+}
+.tu3-1{
+    background-image: url(../images/LYT11.webp);
+    background-size: 100%;
+}
+.tu3-2{
+    right: 0;
+    background-image: url(../images/LYT12.webp);
+    background-size: 100%;
+}
+/* 第三行的标题和链接 */
+.tu3-1 div,.tu3-2 div{
+    display: inline-block;
+}
+.tu3-1>div,.tu3-2>div{
+    width: 77rem;
+    height: 4.2rem;
+    padding: 3rem 2rem ;
+    font-size: 3.2rem;
+}
+.hei{
+    position: relative;
+    left: 43.8rem;
+    top: 0;
+    width: 6.4rem;
+    height: 3.9rem;
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.hei>a{
+    display: inline-block;
+    position: absolute;
+    height: 40;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    line-height: 4rem;
+}
+.hei::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3.9rem;
+    width: 6.4rem;
+    height: 3.9rem;
+    background-color: black;
+}
+.hei:hover::after{
+    top: 0;
+    transition: 0.3s;
+}
+.hei:hover>a{
+    color: aliceblue;
+    z-index: 1;
+}
+/* 第四排矢量图和超链接 */
+.icon {
+    width: 1.75em;
+    height: 1.75em;
+    /* vertical-align: -0.15em; */
+    fill: currentColor;
+    overflow: hidden;
+    display: block;
+    padding: 8px;
+    color: black;
+    /* opacity: 0; */
+    z-index: -1;
+  }
+.sipai a{
+    /* display: block; */
+    width: 4.4rem;
+    height: 4.4rem;
+    position: absolute;
+    /* background-color: aqua; */
+    z-index: 3;
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: all .3s;
+}
+.a3{
+    right: 0;
+    top: 1rem;
+}
+.a4{
+    right: 0;
+    top: 5.4rem;
+}
+/* 第四排图片总大小和各个小盒子 */
+.tu4{
+    width: 160rem;
+    height: 61rem;
+    padding: 2rem 4rem;
+}
+.tu4>div{
+    float: left;
+    width: 38rem;
+    height: 61rem;
+    padding: 1rem;
+    /* outline: 1px solid black; */
+}
+.sipai{
+    position: relative;
+    width: 38rem;
+    height: 47.5rem;
+ 
+}
+/* 四排第一张图 */
+.tu4-1-1{
+    background-image: url(../images/LYT13.webp);
+    background-size: 100%;
+}
+.tu4-1-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT14.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu4-1-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.sipai:hover a{
+    opacity: 1;
+    /* z-index: 3; */
+    /* visibility: visible; */
+}
+/* 第四排图片下面的名称价格 */
+.jiage{
+    width: 34rem;
+    height: 9.5rem;
+    padding: 2rem;
+    /* outline: 1px solid hotpink; */
+}
+.jiage a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 4rem;
+}
+.jiage div{
+    width: 34rem;
+    height: 2.1rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+/* 四排第二张图 */
+.tu4-2-1{
+    background-image: url(../images/LYT15.webp);
+    background-size: 100%;
+}
+.tu4-2-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT16.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu4-2-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.sipai:hover a{
+    opacity: 1;
+}
+/* 四排第三张图 */
+.tu4-3-1{
+    background-image: url(../images/LYT17.webp);
+    background-size: 100%;
+}
+.tu4-3-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT18.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu4-3-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.sipai:hover a{
+    opacity: 1;
+}
+/* 四排第四张图 */
+.tu4-4-1{
+    background-image: url(../images/LYT19.webp);
+    background-size: 100%;
+    
+}
+.tu4-4-1::after{
+    content: "";
+    display: inline-block;
+    width: 38rem;
+    height: 47.5rem;
+    position: absolute;
+    top: 0px;
+    background-image: url(../images/LYT20.webp);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.tu4-4-1:hover::after{
+    opacity: 1;
+    transition: all 0.8s;
+}
+.sipai:hover a{
+    opacity: 1;
+}
+/* 固定定位的与我交流 */
+.jiaoliu{
+    position: fixed;
+    right: 3rem;
+    bottom: 4rem;
+}

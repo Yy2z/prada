@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(7px); */
+    background-color: rgb(255, 255, 255);
+    /* border-right: 1px rgba(40, 40, 40, 0.35) solid; */
+    position: fixed;
+    z-index: 9;
+  }
+  .container {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 48px;
+    margin: auto;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    float: left;
+    width: 90px;
+    height: 48px;
+  }
+  
+  .logo img {
+    height: 28px;
+    margin-left: 15%;
+    margin-top: 12%;
+  }
+  
+  .container ul {
+    float: left;
+    margin-left: 100px;
+    margin-top: 18px;
+  }
+  
+  .container ul li {
+    float: left;
+    width: 50px;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .container ul li a {
+    margin: auto;
+  
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .last {
+    position: relative;
+    /* top: 100px; */
+    left: 50px;
+  }
+  .icon {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 48px;
+    justify-content: space-between;
+  }
+  .icon a {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    top: 25%;
+  }
+  .icon img {
+    height: 14px;
+    /* text-align: justify; */
+  }
+  .headershoushuo1 {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .headershoushuo2 {
+    
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #000000;
+    left: 20px;
+    width: 230px;
+  
+  }
+  .headershoushuo2 input {
+    position: relative;
+    border-style: none;
+    font-size: 12px;
+    forced-color-adjust: none;
+    left: 0;
+    top: 0;
+  }
+  .headershoushuo2 input:focus {
+    border-style: none;
+    outline: none;
+  }
+  .dropbtn {
+    color: white;
+    border: none;
+    /* 光标样式 手指 */
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    top: 48px;
+    width: 600px;
+    height: 600px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+  }
+  .dropdown1 {
+    position: relative;
+    width: 60px;
+  }
+  .dropdown2 {
+    position: relative;
+    width: 400px;
+    left: 300px;
+    height: 600px;
+    background-color: #b9b9b9a2;
+    opacity: 0;
+  }
+  
+  .dropdown3 {
+    /* float: left; */
+    position: relative;
+    /* left: -150px; */
+    top: -110px;
+  }
+  .dropdown3 a {
+    display: inline-block;
+    width: 200px;
+    /* height: 10px; */
+  }
+  
+  .dropdown-content div:hover .dropdown2 {
+    opacity: 1;
+  }
+  .dropdown-content ul {
+    position: relative;
+    left: -100px;
+    height: 6px;
+  }
+  .dropdown-content ul li {
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  .dropdown-content div ::after {
+    position: relative;
+    left: 0px;
+    content: " ＞";
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .dropdown-content ul :hover {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  
+  .dropdown-content div :hover ::after {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+  .dropdown a:hover {
+    /* background-color: #f1f1f1; */
+    color: #4e4e4e;
+  }
+  .show {
+    display: block;
+  }
+
+
+
+
+.floatleft{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+section{
+  position: relative;
+  top: 48px;
+    width: 100%;
+    height: 650px;
+}
+
+.sectCont1{/* 测边框外框 */
+    
+    height: 550px;
+    width: 105px;
+    background-color: black;
+    position: relative;
+    overflow: visible;
+    z-index: 2;
+}
+.Cont1div{/* 定位旋转 */
+    width: 550px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 83px;
+    /* border: 1px solid red; */
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+
+}
+.Cont1kuang{/* 测边框三个小方块 */
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    padding: 18px 28px;
+}    
+.Cont1kuang .smallbox{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: none;
+}
+.Cont1kuang .bigbox{
+    position: relative;
+    top: 14px;
+    
+    width: 22px;
+    height: 10px;
+    border: 1px solid white;
+    
+}
+.Cont1div .Cont1font{/* 测边框英文字母外框 */
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+.Cont1div .Cont1font h2{/* h2标签 */
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5em;
+}
+.sectCont1 .Cont1k2{/* 全部 */
+    display: inline-block;
+    height: 60px;
+    width: 220px; 
+    /* border: 1px solid green; */
+
+} 
+.sectCont1 .div-ul{
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+   /* border: 1px solid blue; */
+    font-size: 0.8em; 
+    position: relative;
+}
+.div-ul li{
+    float: left;
+    margin-left: 20px;
+    /* border: 1px solid yellow; */
+}
+/* .sectCont1 .Cont1k2 .div-ul a{
+    text-decoration: none;
+    color: white;
+} */
+.sectCont1 .Cont1k2 .div-ul a .jiahao{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+.sectCont3{/* 隐藏框 */
+    width: 166px;
+    height: 498px;
+    background-color: black;
+    position: absolute;
+
+    transform-origin: top left;
+    transform: rotate(90deg);
+    visibility: hidden;
+}
+.sectCont3 .Cont3-ul{
+    list-style: none;
+}
+.sectCont3 .Cont3-ul li{
+    height: 160px;
+    width: 160px;
+    padding: 3px;
+    margin-left: 0;
+}/*  */
+.sectCont3 .Cont3-ul li img{
+    height: 100%;
+    width: 100%;
+}
+.sectCont1 .Cont1div .Cont1k2 .div-ul .div-ul-li:hover .sectCont3{
+    visibility: visible;
+}
+
+.sectCont2{/* 图片外框 */
+    width: 93%;
+    height: 550px; 
+    background-color: black;
+    /* background-color: black; */
+    position: relative;
+    /* z-index: 1; */
+}
+.sectCont2 .Cont2-ul{
+    list-style: none;
+
+}
+.sectCont2 .Cont2-ul li{/* li布局 */
+    float: left;
+    width: 191px;
+    height: 224px;
+    background-color: #222222;
+    /* border: 1px solid red; */
+    margin: 20px 20px;
+    position: relative;
+    
+}
+.sectCont2 .Cont2-ul li:nth-child(6n){/* 取消第6、12的margin右值 */
+    margin-right: 0;
+} 
+.Cont2-ul .spanro{/* li标签中旋转再定位 */
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 30px;
+    font-size: 0.5em;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.Cont2-ul p{
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Cont2-ul .div-bg{/* 设置图片的外框 */
+    display: inline-block;
+    width: 151px;
+    height: 105px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    /* background-color: goldenrod; */
+}
+.bg11{/* 图片的三个宽高设置 */
+    width: 85px;
+    height: 105px;
+    transition: all 1s;
+}
+.bg12{
+    width: 104px ;
+    height: 104px ;
+    transition: all 1s;
+}
+.bg13{
+    width: 151px ;
+    height: 100px ;
+    transition: all 1s;
+}
+/* .Cont2-ul .div-bg img{
+    width: 100%;
+    height: 100%;
+} */
+.Cont2-ul .div-font{/* 图片下方的文字设置外框 */
+    width: 151px;
+    height: 100px;
+    margin-left: 10px;
+    /* border: 1px solid #000; */
+    text-align: left;
+    
+}
+.Cont2-ul .div-font span{/* 日期 */
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-size: 0.8em;
+}
+.Cont2-ul .div-font h2{
+    height: 45px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    overflow: hidden;
+}
+.Cont2-ul .div-hover{/* 设置并隐藏探索框 */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 87px;
+    left: 70px;
+    visibility: hidden;
+}
+
+.Cont2-ul li:hover .spanro{/* 调低亮度 */
+   filter: brightness(40%);
+}
+.Cont2-ul li:hover .div-bg{
+    filter: brightness(40%);
+ }
+ .Cont2-ul li:hover .div-font{
+    filter: brightness(40%);
+ }
+.Cont2-ul li:hover .div-hover{/* 显示探索框 */
+    visibility: visible;
+    
+}
+.Cont2-ul .div-hover:hover{/* 探索框变化 */
+    background-color: white;
+    color: #000;
+    transition: all 1s;
+}
+.Cont2-ul .div-hover:hover a{
+    color: #000;
+}
+.Cont2-ul li:hover .div-bg img{/* 图片放大 */
+    transform: scale(1.1);
+    transition: all 1s;
+}

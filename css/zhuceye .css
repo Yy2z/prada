@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 75.5%;
+}
+section{
+    width: 139rem;
+    height: 68.2rem;
+    /* padding: 2rem 8%; */
+    margin: 0 6%;
+    /* outline: 1px solid black; */
+    position: relative;
+    top: 50px;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* border-radius: 10px; */
+    /* backdrop-filter: blur(7px); */
+    background-color: rgb(255, 255, 255);
+    /* border-right: 1px rgba(40, 40, 40, 0.35) solid; */
+    position: fixed;
+    z-index: 9;
+  }
+  .container {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 48px;
+    margin: auto;
+  }
+  
+  .logo {
+    margin-left: 0%;
+    float: left;
+    width: 90px;
+    height: 48px;
+  }
+  
+  .logo img {
+    height: 28px;
+    margin-left: 15%;
+    margin-top: 12%;
+  }
+  
+  .container ul {
+    float: left;
+    margin-left: 100px;
+    margin-top: 18px;
+  }
+  
+  .container ul li {
+    float: left;
+    width: 50px;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .container ul li a {
+    margin: auto;
+  
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .last {
+    position: relative;
+    /* top: 100px; */
+    left: 50px;
+  }
+  .icon {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 48px;
+    justify-content: space-between;
+  }
+  .icon a {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    top: 25%;
+  }
+  .icon img {
+    height: 14px;
+    /* text-align: justify; */
+  }
+  .headershoushuo1 {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .headershoushuo2 {
+    
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid #000000;
+    left: 20px;
+    width: 230px;
+  
+  }
+  .headershoushuo2 input {
+    position: relative;
+    border-style: none;
+    font-size: 12px;
+    forced-color-adjust: none;
+    left: 0;
+    top: 0;
+  }
+  .headershoushuo2 input:focus {
+    border-style: none;
+    outline: none;
+  }
+  .dropbtn {
+    color: white;
+    border: none;
+    /* 光标样式 手指 */
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    top: 48px;
+    width: 600px;
+    height: 600px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+  }
+  .dropdown1 {
+    position: relative;
+    width: 60px;
+  }
+  .dropdown2 {
+    position: relative;
+    width: 400px;
+    left: 300px;
+    height: 600px;
+    background-color: #b9b9b9a2;
+    opacity: 0;
+  }
+  
+  .dropdown3 {
+    /* float: left; */
+    position: relative;
+    /* left: -150px; */
+    top: -110px;
+  }
+  .dropdown3 a {
+    display: inline-block;
+    width: 200px;
+    /* height: 10px; */
+  }
+  
+  .dropdown-content div:hover .dropdown2 {
+    opacity: 1;
+  }
+  .dropdown-content ul {
+    position: relative;
+    left: -100px;
+    height: 6px;
+  }
+  .dropdown-content ul li {
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  .dropdown-content div ::after {
+    position: relative;
+    left: 0px;
+    content: " ＞";
+    width: 10px;
+    height: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .dropdown-content ul :hover {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  
+  .dropdown-content div :hover ::after {
+    opacity: 1;
+  
+    font-weight: 800;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+  .dropdown a:hover {
+    /* background-color: #f1f1f1; */
+    color: #4e4e4e;
+  }
+  .show {
+    display: block;
+  }
+/* 注册页面左边 */
+.zuo{
+    width: 74.7rem;
+    height: 60.2rem;
+    padding: 4rem;
+}
+.zuo h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.zuo>div{
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+form>p{
+    font-size: 1.2rem;
+    margin-bottom: 3.5rem;
+}
+form>div{
+    width: 35rem;
+    height: 5rem;
+    padding: 0 1rem;
+    float: left;
+    /* outline: 1px solid black; */
+}
+/* 男女选择和国家选择*/
+.xiala1{
+    height: 5rem;
+    width: 35rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+/* 姓名 */
+.biaodan{
+    height: 4.5rem;
+    width: 35rem;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+/* 出生日期 */
+.riqi-1{
+    margin-right: 5rem;
+}
+.riqi{
+    text-align: center;
+    height: 3rem;
+    width: 5rem;
+    border: none;
+}
+.xiahuaxian{
+    height: 4.9rem;
+    border-bottom: 1px solid black;
+}
+/* 电话号码前缀 */
+.dianhhua{
+    display: inline-block;
+}
+.xiala2{
+    width: 9rem;
+    height: 4.9rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.haoma{
+    height: 4.9rem;
+    width: 25rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+/* 验证码 */
+.yanzhengma{
+    width: 74.7rem;
+    height: 5.2rem;
+    padding: 4rem 0 3rem 0;
+}
+.biaodan1{
+    height: 5rem;
+    width: 35rem;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 8rem;
+}
+/* 发送按钮 */
+.fasong{
+    width: 40rem;
+    height: 5rem;
+    background-color: darkgrey;
+    color: aliceblue;
+    border: none;
+}
+/* 继续购物 */
+.gouwu{
+    display: inline-block;
+    width: 7rem ;
+    height: 3.4rem;
+    text-align: center;
+    line-height: 3.4rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+.gouwu::after{
+    content: "";
+    display: block;
+    width: 7rem;
+    height: 3.4rem;
+    background-color: black;
+    position: absolute;
+    top: 3.4rem;
+    z-index: -1;
+    transition: 0.3s;
+}
+.gouwu:hover::after{
+    top: 0px;
+    transition: 0.3s;
+}
+.gouwu:hover{
+    color: aliceblue;
+    z-index: 1;
+}
+/* 右边文字 */
+.you{
+    width: 40rem;
+    height: 12.2rem ;
+    padding: 3rem 4rem;
+    position: absolute;
+    right: 4.5rem;
+    top: 3rem;
+}
+.you h3{
+    font-size: 1.5rem;
+}
+.you>p{
+    font-size: 1.12rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.you>a{
+    display: inline-block;
+    width: 4rem ;
+    height: 3.4rem;
+    text-align: center;
+    line-height: 3.4rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+.you>a::after{
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 3.4rem;
+    background-color: black;
+    position: absolute;
+    top: 3.4rem;
+    z-index: -1;
+    transition: 0.3s;
+}
+.you>a:hover::after{
+    top: 0px;
+    transition: 0.3s;
+}
+.you>a:hover{
+    color: aliceblue;
+    z-index: 1;
+}

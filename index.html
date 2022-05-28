@@ -19,21 +19,49 @@
                 </a>
             </div>
             <ul class="dropdown">
-                <li><a onclick="myFunction()" class="dropbtn">女士</a></li>
+                <li><a onclick="myFunction()" class="dropbtn">男士</a></li>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <div class="dropdown1">
+                        <ul >
+                            <li>成衣</li>
+                        </ul>
+                        <ul>
+                            <li>包袋</li>
+                        </ul>
+                        <ul>
+                            <li>鞋履</li>
+                        </ul>
+                        <ul>
+                            <li>首饰</li>
+                        </ul>
+                        <ul>
+                            <li>旅行</li>
+                        </ul>
+                        <div class="dropdown2">
+                            <div class="dropdown3">
+                                <a href="./pages/Readytowear.html">全部成衣</a>
+                                <a href="./pages/Readytowear.html">夹克和大衣</a>
+                                <a href="./pages/Readytowear.html">外套和羽绒服</a>
+                                <a href="./pages/Readytowear.html">套西</a>
+                                <a href="./pages/Readytowear.html">衬衫</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <li><a href="#">男士</a></li>
-                <li><a href="#">礼物</a></li>
+                <li><a href="./pages/Readytowear.html">女士</a></li>
+                <li><a href="./pages/liwu.html">礼物</a></li>
                 <li><a href="./pages/LineaRossa.html">LINEAROSSA</a></li>
-                <li><a class="last" href="#">PRADASPHERE</a></li>
+                <li><a class="last" href="./pages/pradaph.html">PRADASPHERE</a></li>
 
             </ul>
             <div class="icon">
-                <a class="icon-fangdajing" href=""><img src="./font/fangdajing.png" alt=""></a>
-                <a class="icon-people" href=""><img src="./font/people.png" alt=""></a>
+                <a onclick="myFunction1()" class="icon-fangdajing"><img src="./font/fangdajing.png" alt=""></a>
+                <div id="headershoushuo" class="headershoushuo1">
+                    <div class="headershoushuo2">
+                        <input type="text" placeholder="搜索内容">
+                    </div>
+                </div>
+                <a class="icon-people" href="./pages/zhueye.html"><img src="./font/people.png" alt=""></a>
                 <a class="icon-aixin" href=""><img src="./font/aixin.png" alt=""></a>
                 <a class="icon-bag" href=""><img src="./font/bag.png" alt=""></a>
             </div>
@@ -197,23 +225,12 @@
     <script>
         /* 点击按钮，下拉菜单在 显示/隐藏 之间切换 */
         function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown" ).classList.toggle("show");
+        }
+        function myFunction1() {
+            document.getElementById("headershoushuo" ).classList.toggle("show");
         }
 
-        // 点击下拉菜单意外区域隐藏
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
         // 获取images元素生成字符串数组，字符串数组不能进行push pop splice 等操作
         // 所以要将它的值重新存放进一个数组中，后面有定义
         var images = document.getElementsByTagName('img');
