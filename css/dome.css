@@ -1,0 +1,171 @@
+* {
+    margin: 0px auto;
+    border: 0px auto;
+}
+
+/*  */
+section {
+    width: 100%;
+    height: 800px;
+
+
+}
+
+/* 导航栏 */
+.nav {
+    width: 97%;
+    height: 60px;
+    background-color: #f7f7f7;
+    opacity: 0.7;
+}
+
+.order {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+.dengluzhuce {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.singin,
+.register {
+
+    vertical-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 18px;
+}
+
+.singin {
+    margin-right: 20px;
+}
+
+/* 心愿单 */
+.wish {
+    width: 1520px;
+    height: 400px;
+
+}
+
+.wish1 {
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    margin-top: 190px;
+
+}
+
+.wish2 {
+    font-size: 25px;
+}
+
+.shopping {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.title {
+    width: 100%;
+    height: 110px;
+}
+
+h1 {
+    display: block;
+    margin-left: 30px;
+    font-size: 30px;
+    height: 110px;
+    line-height: 110px;
+}
+
+.photo {
+    width: 100%;
+    height: 680px;
+
+
+}
+
+.photo1 {
+    float: left;
+    width: 420px;
+    height: 520px;
+    text-align: center;
+    margin: left;
+    margin-left: 38%;
+    /* transition: all .9s; */
+
+}
+
+.photo2 {
+    float: left;
+    width: 420px;
+    height: 520px;
+    margin-left: -415px;
+    transition: all .9s;
+    opacity: 0;
+}
+
+.photo2:hover {
+    opacity: 1;
+    cursor: pointer;
+
+
+}
+
+.div1 {
+    width: 420px;
+    height: 100px;
+    margin-left: 600px;
+
+}
+
+.shoes {
+    padding-top: 20px;
+    cursor: pointer;
+
+}
+
+.money {
+    margin-top: 20px;
+}
+
+.div2 {
+    width: 377px;
+    height: 360px;
+    line-height: 36px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+
+}
+
+.size {
+    float: left;
+    width: 100px;
+    height: 36px;
+    margin-left: 0px;
+    opacity: 0.3;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.stock {
+    border: 1px solid black;
+    width: 100px;
+    height: 36px;
+    margin-left: 270px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
